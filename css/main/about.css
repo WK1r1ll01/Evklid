@@ -1,0 +1,191 @@
+.about {
+   padding: 0 0 100px 0;
+}
+
+.about-title {
+   margin: 0 0 20px 0;
+}
+
+.about-text {
+   max-width: 1235px;
+   line-height: 32px;
+   margin: 0 0 50px 0;
+}
+
+.about__wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.about__image {
+   background: url(../../img/bg/about__image.jpg)no-repeat;
+   background-position: center center;
+   background-size: cover;
+   border-radius: 32px;
+   width: 868px;
+   margin: 0 32px 0 0 ;
+   display: flex;
+   align-items: end;
+}
+
+.about__image__box {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 32px;
+   padding: 68px 50px;
+}
+
+.image__box-text {
+   font-weight: 700;
+   line-height: 32px;
+   color: white;
+   max-width: 433px;
+   margin: 0 10px 0 0;
+}
+
+.about__item {
+   display: flex;
+   border: 1px solid #CACACA;
+   border-radius: 32px;
+   padding: 65px 80px;
+   margin: 0 0 32px 0;
+}
+
+.about__item:last-child {
+   margin: 0;
+}
+
+.about__item-img {
+   margin: 0 50px 0 0;
+}
+
+.about__item-text {
+   max-width: 452px;
+}
+
+.about__item-text-title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.about__item-text-text {
+   line-height: 32px;
+}
+
+/*======== RESPONSIVE ========*/
+
+@media (max-width: 1720px) {
+   .about__wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .about__image {
+      margin: 0 0 32px 0;
+      width: 100%;
+      height: 640px;
+   }
+}
+
+@media (max-width: 990px) {
+   .about__item {
+      padding: 65px 20px;
+   }
+}
+
+@media (max-width: 784px) {
+   .image__box-text {
+      font-size: 14px;
+      font-weight: 400;
+      color: black;
+   }
+
+   .about__image__box a {
+      color: #FF9900;
+   }
+
+   .about__image__box {
+      transform: translateY(180px);
+      background: transparent;
+      justify-content: start;
+      padding: 0;
+   }
+
+   .about__items {
+      margin: 200px 0 0 0;
+   }
+   
+   .about__item-img img {
+      width: 90%;
+   }
+
+   .about__item-img {
+      margin: 0 20px 0 0;
+   }
+}
+
+@media (max-width: 526px) {
+   .about__item-text-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+   }
+
+   .about__item-text-text {
+      font-size: 14px;
+      line-height: 28px;
+   }
+}
+
+@media (max-width: 700px) {
+   .about__image {
+      height: 400px;
+   }
+   
+   .about__image__box {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+   }
+
+   .about__image__box p {
+      margin: 0 auto;
+   }
+
+   .about__image__box {
+      transform: translateY(260px);
+   }
+
+   .image__box-btn {
+      margin: 10px 0 0 0;
+   }
+
+   .about__items {
+      margin: 280px 0 0 0;
+   }
+
+   .about__item {
+      border: none;
+      flex-direction: column;
+      margin: 0;
+      padding: 12px 20px;
+   }
+
+   .about__item-img {
+      margin: 0 0 10px 0;
+   }
+   
+   .about__item-img img {
+      width: 30%;
+   }
+}
+
+@media (max-width: 375px) {
+   .about__items {
+      margin: 260px 0 0 0;
+   }
+}

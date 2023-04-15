@@ -54,9 +54,10 @@ body {
    }
 }
 
-/*===== BUTTON START =====*/
+/*======= BUTTON =======*/
 
 .btn-orange {
+   display: inline-block;
    font-weight: 700;
    font-size: 16px;
    padding: 20px 38px;
@@ -69,4 +70,26 @@ body {
 
 .btn-orange:hover {
    background: #FFB84D;
+}
+
+.btn-transparent {
+   display: inline-block;
+   font-weight: 700;
+   font-size: 16px;
+   padding: 20px 38px;
+   background: transparent;
+   border: 3px solid #FF9900;
+   border-radius: 16px;
+   color: #fff;
+   transition: all .4s;
+}
+
+.btn-transparent:hover {
+   background: #FF9900;
+}
+
+/*======= TITLE =======*/
+
+.title_h2 {
+   font-size: 48px;
 }
