@@ -1,0 +1,72 @@
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+
+@import url(../css/header.css);
+@import url(../css/main.css);
+@import url(../css/footer.css);
+
+/*======== BASE ========*/
+
+html, body {
+   height: 100%;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   color: black;
+}
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+[class*="__conteiner"] {
+   max-width: 1800px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+/*======== RESPONSIVE ========*/
+
+@media (max-width: 1200px) {
+   [class*="__conteiner"] {
+      max-width: 970px;
+   }
+}
+
+@media (max-width: 992px) {
+   [class*="__conteiner"] {
+      max-width: 750px;
+   }
+}
+
+@media (max-width: 767px) {
+   [class*="__conteiner"] {
+      max-width: none;
+   }
+}
+
+/*===== BUTTON START =====*/
+
+.btn-orange {
+   font-weight: 700;
+   font-size: 16px;
+   padding: 20px 38px;
+   background: #FF9900;
+   border: none;
+   border-radius: 16px;
+   color: #fff;
+   transition: all .4s;
+}
+
+.btn-orange:hover {
+   background: #FFB84D;
+}
