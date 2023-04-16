@@ -51,6 +51,7 @@
 
 .footer__form__form {
    width: 100%;
+   margin: 0 0 32px 0;
 }
 
 .input-box {
@@ -75,10 +76,6 @@
    transition: .4s;
 }
 
-.input-box_high input {
-   height: 50%;
-}
-
 .input-box input:focus~label,
 .input-box input:valid~label {
    top: 12px;
@@ -96,11 +93,14 @@
 
 .input-box_high {
    height: 150px;
-   margin: 0 0 32px 0;
 }
 
 .input-box_high label {
    top: 20px;
+}
+
+.input-box_high input {
+   top: 0;
 }
 
 .form__confirm {

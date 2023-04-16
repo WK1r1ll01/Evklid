@@ -1,2 +1,4 @@
-@import url(../css/main/hero.css);
-@import url(../css/main/about.css);
+@import url(main/hero.css);
+@import url(main/about.css);
+@import url(main/stages.css);
+@import url(main/faq.css);

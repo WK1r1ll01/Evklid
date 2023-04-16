@@ -1,0 +1,88 @@
+.faq-title {
+   margin: 0 0 32px 0;
+}
+
+.accordion {
+   margin: 0 0 100px 0;
+}
+
+.accordion-btn {
+   position: relative;
+   font-weight: 700;
+   font-size: 24px;
+   text-align: left;
+   width: 100%;
+   background: transparent;
+   padding: 40px 24px 40px 0;
+   border: none;
+   border-top: 1px solid #CACACA;
+   border-bottom: 1px solid #CACACA;
+   transition: .4s;
+}
+
+.accordion-btn::after {
+   content: "+";
+   position: absolute;
+   font-size: 40px;
+   top: 30%;
+   right: 0;
+}
+
+.accordion-btn.active, 
+.accordion-btn.active:hover {
+   border-bottom: none;
+}
+
+.accordion-btn:hover {
+   color: #FF9900;
+   border-top: 1px solid #FF9900;
+   border-bottom: 1px solid #FF9900;
+}
+
+.accordion-panel {
+   max-height: 0;
+   line-height: 32px;
+   overflow: hidden;
+   transition: .3s;
+}
+
+/*======== RESPONSIVE ========*/
+
+@media (max-width: 1024px) {
+   .accordion-btn {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 800px) {
+   .accordion-btn {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 500px) {
+   .faq-title {
+      font-size: 30px !important;
+   }
+}
+
+@media (max-width: 425px) {
+   .faq-title {
+      font-size: 24px !important;
+      font-weight: 500;
+   }
+   
+   .accordion-btn {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 20px 24px 20px 0;
+   }
+
+   .accordion-btn:after {
+      font-size: 28px;
+   }
+
+   .accordion-panel {
+      font-size: 14px;
+   }
+}
