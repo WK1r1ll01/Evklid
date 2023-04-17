@@ -131,28 +131,3 @@ function reveal () {
       }
    }
 }
-
-
-
-// SCROLL ANIMATION 
-
-const scrollItems = document.querySelectorAll('.scroll-item')
-
-const scrollAnimation = () => {
-   let windowCenter = (window.innerHeight / 2) + (window.scrollY + (window.innerHeight / 3));
-
-   scrollItems.forEach(el => {
-      let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
-      if (windowCenter >= scrollOffset) {
-         el.classList.add('animation-class')
-      }else {
-         el.classList.remove('animation-class')
-      }
-   });
-};
-
-scrollAnimation();
-
-window.addEventListener('scroll', () => {
-   scrollAnimation();
-});

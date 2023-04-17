@@ -16,7 +16,6 @@
    padding: 40px 24px 40px 0;
    border: none;
    border-top: 1px solid #CACACA;
-   border-bottom: 1px solid #CACACA;
    transition: .4s;
 }
 
@@ -36,7 +35,6 @@
 .accordion-btn:hover {
    color: #FF9900;
    border-top: 1px solid #FF9900;
-   border-bottom: 1px solid #FF9900;
 }
 
 .accordion-panel {
